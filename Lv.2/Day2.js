@@ -5,15 +5,16 @@ function solution(s) {
 }
 
 const jadenCaseFunction = (str) => {
-  let strArr = [...str.toLowerCase()];
+  let strArr = [...str];
+  let answer = [];
   for (i = 0; i < strArr.length; i++) {
-    if (i === 0 && strArr[i] !== strArr[i].toUpperCase()) {
-      strArr.splice(i, 1, strArr[i].toUpperCase());
-    } else if (strArr[i - 1] === " " && strArr[i] !== strArr[i].toUpperCase()) {
-      strArr.splice(i, 1, strArr[i].toUpperCase());
+    if (i === 0 || strArr[i - 1] === " ") {
+      answer[i] = strArr[i].toUpperCase();
+    } else {
+      answer[i] = strArr[i].toLowerCase();
     }
   }
-  return strArr.join("");
+  return answer.join("");
 };
 
 console.log(solution("for the last week"));

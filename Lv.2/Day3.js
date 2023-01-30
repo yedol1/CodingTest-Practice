@@ -1,3 +1,4 @@
+// 연속한 자연수들로 표현
 function solution(num) {
   let answer = 0;
 

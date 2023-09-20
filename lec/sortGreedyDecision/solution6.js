@@ -13,7 +13,7 @@ function solution(arr) {
     }
     newArray[j + 1] = temp;
   }
-
+  console.log(newArray);
   // 정렬된것과 원래의 배열 비교
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== newArray[i]) {

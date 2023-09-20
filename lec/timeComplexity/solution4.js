@@ -6,6 +6,7 @@ function solution(number, array) {
   for (let i = 0; i < array.length; i++) {
     sum += array[i];
     while (sum > number) {
+      console.log(sum, number);
       sum -= array[lp++];
     }
     answer += i - lp + 1;

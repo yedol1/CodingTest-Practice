@@ -1,3 +1,4 @@
+// 투포인터
 function solution(arr1, arr2) {
   let answer = [];
   let n = arr1.length;

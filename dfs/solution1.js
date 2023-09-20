@@ -7,7 +7,8 @@ function solution(numbers, target) {
   let answer = 0;
 
   function dfs(level, sum) {
-    // 레벨을 깊이라고 생각하면 된다. 이때 더이상 들어갈 깊이가 없고, 우리가 도출하고자 하는 조건에 충족한다면 answer의 카운트를 하나 증가시킨다.
+    console.log(level);
+    // 레벨을 깊이라고 생각하면 된다. 이때 더이상 들어갈 깊이가 없고, 우리가 도출하고자 하는 조건에 충족한다면 answer의 카운트를 하나 증가시킨다. 그 후 함수를 종료한다.
     if (level === length) {
       if (target === sum) {
         answer++;

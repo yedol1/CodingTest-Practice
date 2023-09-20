@@ -1,3 +1,4 @@
+// 격자판 최대합 ( max 함수 활용)
 function solution(array) {
   let answer = Number.MIN_SAFE_INTEGER;
   let length = array.length;

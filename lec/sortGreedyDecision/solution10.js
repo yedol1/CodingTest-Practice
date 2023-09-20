@@ -1,3 +1,4 @@
+// 이분탐색
 function solution(arr, target) {
   arr.sort((a, b) => a - b);
   let lp = 0;

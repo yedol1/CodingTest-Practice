@@ -1,3 +1,4 @@
+// 슬라이딩 윈도우
 function solution(k, array) {
   let answer = 0;
   let sum = 0;

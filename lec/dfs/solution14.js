@@ -1,6 +1,7 @@
 function solution(n, m) {
   let answer = [];
-  let temp = Array.from({ length: m }, (v) => 0);
+  let temp = Array.from({ length: m }, (v, i) => [i]);
+  console.log(temp);
   function DFS(level, pickNum) {
     if (level === m) {
       answer.push([...temp]);

@@ -23,4 +23,25 @@ function solution(string) {
     return true;
   } else return false;
 }
-console.log(solution("()()"));
+// 스택활용
+function solution(string) {
+  let answer = true;
+  let stack = [];
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "(") {
+      stack.push("(");
+    }
+    if (string[i] === ")") {
+      if (stack.length !== 0) {
+        stack.pop();
+      } else return (answer = false);
+    }
+  }
+
+  if (stack.length !== 0) {
+    answer = false;
+  }
+  return answer;
+}
+
+console.log(solution("(()("));

@@ -1,3 +1,4 @@
+// stack
 function solution(string) {
   let open = "(";
   let close = ")";

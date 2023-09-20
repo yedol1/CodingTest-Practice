@@ -12,4 +12,5 @@ function solution(arr) {
   }
   return answer;
 }
+
 console.log(solution([4, 4, 4, 3, 3]));

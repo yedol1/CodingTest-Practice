@@ -1,11 +1,10 @@
-function solution(string) {
+function solution(input) {
   let minus = 0;
   let plus = 0;
   let isMinus = false;
-  let isSame = false;
   let temp = "";
   let splitArr = [];
-  let arr = string.split("");
+  let arr = input.split("");
   arr.map((str, idx) => {
     if (idx === arr.length - 1) {
       temp = temp + str;

@@ -20,31 +20,6 @@ function solution(str) {
   }
   if (flag) return answer;
   else return -1;
-  // while (answer !== -1) {
-  //   if (B % 2 === 0) {
-  //     B = B / 2;
-  //     answer++;
-  //     console.log("if", B);
-  //     if (A === B) {
-  //       return answer;
-  //     }
-  //   } else if ((B - 1) % 10 === 0) {
-  //     B = (B - 1) / 10;
-  //     answer++;
-  //     console.log("elseif", B);
-  //     if (A === B) {
-  //       return answer;
-  //     }
-  //   } else {
-  //     answer = -1;
-  //     return -1;
-  //   }
-  //   if (A > B) {
-  //     answer = -1;
-  //     return -1;
-  //   }
-  // }
-  // return answer;
 }
 
 console.log(solution("2 162"));
